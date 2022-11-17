@@ -11,6 +11,8 @@ const expressJoi = require('@escook/express-joi')
 //导入需要验证规则对象 {}解构赋值
 const { reg_login_schema } = require('../schema/user')
 
+
+
 //注册新用户
 router.post('/register', expressJoi(reg_login_schema), userHandle.register)
 

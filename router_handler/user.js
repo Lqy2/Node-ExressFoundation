@@ -82,5 +82,4 @@ exports.login = (req, res) => {
       token: 'Bearer ' + tokenStr
     })
   })
-  res.send('login OK')
 }
